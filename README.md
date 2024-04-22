@@ -712,3 +712,40 @@ To https://github.com/beylar/Gym-Git-Practices.git
 branch 'ft/team-page' set up to track 'origin/ft/team-page'.
 
 ```
+
+### Exercise 2
+```bash
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git checkout -f ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/faq-page)
+$ git branch ft/home-page-redesign
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/faq-page)
+$ git checkout -f main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git commit -m "Changes and Commit"
+[main 75aedbe] Changes and Commit
+ 2 files changed, 229 insertions(+), 1 deletion(-)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 2.22 KiB | 189.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.       
+To https://github.com/beylar/Gym-Git-Practices.git
+   d5b61e7..75aedbe  main -> main
+
+   ```
