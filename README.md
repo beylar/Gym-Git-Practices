@@ -232,5 +232,34 @@ Fast-forward
  create mode 100644 home.html
  create mode 100644 services.html
 
+ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git branch ft/service-redesign
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git checkout ft/service-redesign 
+M       README.md
+D       practice/team.html
+Switched to branch 'ft/service-redesign'
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/service-redesign)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/service-redesign)
+$ git commit -m "My services file changes"
+[ft/service-redesign e7db401] My services file changes
+ 2 files changed, 40 insertions(+)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/service-redesign)
+$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 904 bytes | 301.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.       
+To https://github.com/beylar/Gym-Git-Practices.git
+   b5e0e67..e7db401  ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
  
 ```
