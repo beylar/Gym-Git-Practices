@@ -270,5 +270,24 @@ Fast-forward
  practice/services.html | 11 ++++++++++
  practice/team.html     |  0
  3 files changed, 69 insertions(+)
+
+ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git commit -m "Services file"
+[main 93335a2] Services file
+ 1 file changed, 1 insertion(+)
  
+ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 408 bytes | 204.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.       
+To https://github.com/beylar/Gym-Git-Practices.git
+   ada7644..93335a2  main -> main
 ```
