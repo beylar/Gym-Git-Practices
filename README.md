@@ -290,4 +290,68 @@ Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.       
 To https://github.com/beylar/Gym-Git-Practices.git
    ada7644..93335a2  main -> main
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git checkout -f ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/service-redesign)
+$ git diff main ft/service-redesign
+diff --git a/README.md b/README.md
+index d1b1d2c..3d84f6b 100644
+--- a/README.md
++++ b/README.md
+@@ -261,33 +261,5 @@ remote: Resolving deltas: 100% (2/2), completed with 2 
+local objects.
+ To https://github.com/beylar/Gym-Git-Practices.git
+    b5e0e67..e7db401  ft/service-redesign -> ft/service-redesign
+ branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'. 
+-
+-thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+-$ git pull
+-Updating b5e0e67..f27daaf
+-Fast-forward
+- README.md              | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++
+- practice/services.html | 11 ++++++++++
+- practice/team.html     |  0
+- 3 files changed, 69 insertions(+)
+-
+- thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+-$ git add .
+-
+-thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+-$ git commit -m "Services file"
+-[main 93335a2] Services file
+- 1 file changed, 1 insertion(+)
+
+- thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+-$ git push origin main
+-Enumerating objects: 7, done.
+-Counting objects: 100% (7/7), done.
+-Delta compression using up to 4 threads
+-Compressing objects: 100% (4/4), done.
+-Writing objects: 100% (4/4), 408 bytes | 204.00 KiB/s, done.
+-Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.      
+ 
+-To https://github.com/beylar/Gym-Git-Practices.git
+-   ada7644..93335a2  main -> main
+ ```
+\ No newline at end of file
+diff --git a/practice/services.html b/practice/services.html
+index 6dd7f53..7544a4e 100644
+--- a/practice/services.html
++++ b/practice/services.html
+@@ -6,7 +6,6 @@
+     <title>My services are the following</title>
+ </head>
+ <body>
+-    <p>Please follow for more info: what is it?</p>
+-    <div class="new"></div>
++    <p>Please follow for more info</p>
+ </body>
+ </html>
+\ No newline at end of file
+(END)
 ```
