@@ -988,7 +988,31 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/beylar/git-cafe-exercise.git
    8a882df..714a66d  feature-branch -> feature-branch
 branch 'feature-branch' set up to track 'origin/feature-branch'.
+
+
+
 ```
 
 ### Exercise 2
+```bash
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (main)
+$ git branch bug-fix-branch
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (main)
+$ git checkout -f bug-fix-branch
+Switched to branch 'bug-fix-branch'
+
+
+
+```
+
+### Exercise 3
+```bash
+
+```
+
+### Exercise 4
+```bash
+
+```
 
