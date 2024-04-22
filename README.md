@@ -846,3 +846,80 @@ To https://github.com/beylar/Gym-new-repo.git
 ```
 
 ### Exercise 2
+```bash
+ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (main)   
+$ git checkout -f ft/footer
+Switched to branch 'ft/footer'
+Your branch is up to date with 'origin/ft/footer'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (ft/footer)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (ft/footer)
+$ git commit -m "My footer file"
+[ft/footer f5593ac] My footer file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (ft/footer)
+$ git push --set-upstream origin footer
+error: src refspec footer does not match any
+error: failed to push some refs to 'https://github.com/beylar/Gym-new-repo.git'
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 177.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+To https://github.com/beylar/Gym-new-repo.git
+   d9889b1..f5593ac  ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (ft/footer)
+$ git checkout -f main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (main)   
+$ git branch ft/sqashing
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (main)   
+$ git checkout -f ft/sqashing
+Switched to branch 'ft/sqashing'
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (ft/sqashing)
+$ git merge --squash ft/footer
+Auto-merging home.html
+Squashed commit of the following:
+
+commit f5593acfedbce3dbb4fc27323e9c39e7c05673b7
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 21:22:06 2024 +0200
+
+    My footer file
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (ft/sqashing)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (ft/sqashing)
+$ git commit -m "Footer changes Squashing"
+[ft/sqashing ec67381] Footer changes Squashing
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (ft/sqashing)
+$ git push --set-upstream origin ft/sqashing
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 948 bytes | 105.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.        
+To https://github.com/beylar/Gym-new-repo.git
+   d9889b1..ec67381  ft/sqashing -> ft/sqashing
+branch 'ft/sqashing' set up to track 'origin/ft/sqashing'.
+```
