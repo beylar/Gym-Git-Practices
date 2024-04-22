@@ -748,4 +748,57 @@ remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 To https://github.com/beylar/Gym-Git-Practices.git
    d5b61e7..75aedbe  main -> main
 
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git commit -m "My readME"
+[main 4f562fb] My readME
+ 1 file changed, 38 insertions(+), 1 deletion(-)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 568 bytes | 142.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+To https://github.com/beylar/Gym-Git-Practices.git
+   75aedbe..4f562fb  main -> main
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git checkout -f "ft/home-page-redesign"
+Switched to branch 'ft/home-page-redesign'
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/home-page-redesign|REBASE 1/2)
+$ git rebase --continue
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+hegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/home-page-redesign)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/home-page-redesign)
+$ git commit -m "Rebased"
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 532 bytes | 66.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+To https://github.com/beylar/Gym-Git-Practices.git
+   d5b61e7..91df030  ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
    ```
+
+## Bundle 4
+### Exercise 1
