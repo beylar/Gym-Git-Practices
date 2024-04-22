@@ -923,3 +923,39 @@ To https://github.com/beylar/Gym-new-repo.git
    d9889b1..ec67381  ft/sqashing -> ft/sqashing
 branch 'ft/sqashing' set up to track 'origin/ft/sqashing'.
 ```
+
+## Bundle 5
+### Exercise 2
+```bash
+ C:\Users\thegym\Desktop> git clone https://github.com/beylar/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93
+Receiving objects: 100% (107/107), 1.95 MiB | 2.51 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (main)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (main)
+$ git commit -m "My text Welcome"
+[main 8a882df] My text Welcome
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.    
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done. 
+Writing objects: 100% (3/3), 323 bytes | 161.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.       
+To https://github.com/beylar/git-cafe-exercise.git
+   d1d3f9c..8a882df  main -> main
+```
+
+## Bundle 6
+### Exercise 1
