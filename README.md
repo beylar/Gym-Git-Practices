@@ -168,3 +168,6 @@ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (main)
 $ git reset --hard
 HEAD is now at 51e294b Stashed files
 ```
+
+## Bundle 2
+### Exercise 1
