@@ -337,7 +337,7 @@ local objects.
  
 -To https://github.com/beylar/Gym-Git-Practices.git
 -   ada7644..93335a2  main -> main
- ```
+ 
 \ No newline at end of file
 diff --git a/practice/services.html b/practice/services.html
 index 6dd7f53..7544a4e 100644
@@ -354,4 +354,133 @@ index 6dd7f53..7544a4e 100644
  </html>
 \ No newline at end of file
 (END)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/contact-page)
+$ git cherry-pick
+usage: git cherry-pick [--edit] [-n] [-m <parent-number>] [-s] [-x] [--ff]
+                       [-S[<keyid>]] <commit>...
+   or: git cherry-pick (--continue | --skip | --abort | --quit)
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --[no-]cleanup <mode> how to strip spaces and #comments from message    
+    -n, --no-commit       don't automatically commit
+    --commit              opposite of --no-commit
+    -e, --[no-]edit       edit the commit message
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -m, --[no-]mainline <parent-number>
+                          select mainline parent
+    --[no-]rerere-autoupdate
+                          update the index with reused conflict resolution if possible
+    --[no-]strategy <strategy>
+                          merge strategy
+    -X, --[no-]strategy-option <option>
+                          option for merge strategy
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+    -x                    append commit name
+    --[no-]ff             allow fast-forward
+    --[no-]allow-empty    preserve initially empty commits
+    --[no-]allow-empty-message
+                          allow commits with empty messages
+    --[no-]keep-redundant-commits
+                          keep redundant, empty commits
+
+```
+```bash
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/contact-page)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/contact-page)
+$ git commit -m "Changes from contact page"
+[ft/contact-page 57ce879] Changes from contact page
+ 1 file changed, 1 insertion(+)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 414 bytes | 69.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.       
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:  
+remote:      https://github.com/beylar/Gym-Git-Practices/pull/new/ft/contact-page
+remote:
+To https://github.com/beylar/Gym-Git-Practices.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/contact-page)
+$ git branch ft/faq-page
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/contact-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/faq-page)
+$ cd practice
+bash: cd: practice: No such file or directory
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/faq-page)
+$ touch faq.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/faq-page)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/faq-page)
+$ git commit -m "My faq file and changes"
+[ft/faq-page 8ec310e] My faq file and changes
+ 1 file changed, 11 insertions(+)
+ create mode 100644 practice/faq.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 526 bytes | 47.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:      
+remote:      https://github.com/beylar/Gym-Git-Practices/pull/new/ft/faq-page
+remote:
+To https://github.com/beylar/Gym-Git-Practices.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (main)
+$git revert 76a811c6b82cf59857af43a5a0327b788efe6316
+[ft/faq-page 33bc7ca] Revert "added the team page"
+ 1 file changed, 11 deletions(-)
+ delete mode 100644 team.html
+
+ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/team-page)   
+$ git add . 
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/team-page)
+$ git commit -m "Team page reverted by hash"
+[ft/team-page 9057c8d] Team page reverted by hash 
+ 2 files changed, 2 insertions(+), 24 deletions(-)
+ delete mode 100644 practice/team.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/team-page)
+$ git push --set-upstream origin ft/team-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.    
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 366 bytes | 91.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.       
+To https://github.com/beylar/Gym-Git-Practices.git
+   701b7bd..9057c8d  ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
 ```
