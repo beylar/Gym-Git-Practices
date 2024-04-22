@@ -261,5 +261,14 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/beylar/Gym-Git-Practices.git
    b5e0e67..e7db401  ft/service-redesign -> ft/service-redesign
 branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git pull
+Updating b5e0e67..f27daaf
+Fast-forward
+ README.md              | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ practice/services.html | 11 ++++++++++
+ practice/team.html     |  0
+ 3 files changed, 69 insertions(+)
  
 ```
