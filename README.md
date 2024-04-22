@@ -337,7 +337,7 @@ local objects.
  
 -To https://github.com/beylar/Gym-Git-Practices.git
 -   ada7644..93335a2  main -> main
- ```
+
 \ No newline at end of file
 diff --git a/practice/services.html b/practice/services.html
 index 6dd7f53..7544a4e 100644
@@ -355,3 +355,14 @@ index 6dd7f53..7544a4e 100644
 \ No newline at end of file
 (END)
 ```
+
+## Bundle 3
+ ### Exercise 1
+
+ ```bash
+ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git branch ft/team-page
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ touch team.html
+
