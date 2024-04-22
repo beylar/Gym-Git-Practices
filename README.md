@@ -205,3 +205,32 @@ To https://github.com/beylar/Gym-Git-Practices.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 
 ```
+
+### Exercise 2
+```bash
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git pull
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.74 KiB | 296.00 KiB/s, done.
+From https://github.com/edine-noella/Git-practice-project1
+   3276ce4..2e4beb0  main       -> origin/main
+Updating 3276ce4..2e4beb0
+Fast-forward
+ about.html    | 11 +++++++++++
+ home.html     | 11 +++++++++++
+ services.html | 12 ++++++++++++
+ 3 files changed, 34 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+
+ 
+```
