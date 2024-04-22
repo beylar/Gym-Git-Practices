@@ -354,6 +354,234 @@ index 6dd7f53..7544a4e 100644
  </html>
 \ No newline at end of file
 (END)
+```
+
+## Bundle 3
+### Exercise 1
+
+```bash
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git branch ft/team-page
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ touch team.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git checkout ft/team-page
+M       README.md
+Switched to branch 'ft/team-page'
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/team-page)   
+$ cd practice
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/team-page)
+$ touch team.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/team-page)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/team-page)
+$ git commit -m "My changes in team page"
+[ft/team-page 701b7bd] My changes in team page
+ 2 files changed, 24 insertions(+), 2 deletions(-)
+ create mode 100644 practice/team.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/team-page)
+$ git push 
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/team-page)
+$ git push --set-upstream origin ft/team-page
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 643 bytes | 107.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.       
+To https://github.com/beylar/Gym-Git-Practices.git
+   ce955f3..701b7bd  ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/team-page)
+$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.        
+Aborting
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/team-page)
+$ git checkout -f main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (main)  
+$ git branch ft/contact-page
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (main)  
+$ git checkout -f ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/team-page)
+$ git log
+commit 701b7bdbf80cb7c3d560c92a9a24f3ab5542d2bc (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 18:01:49 2024 +0200
+
+    My changes in team page
+
+commit ce955f3eab2e2cfa745658eed03a6b21efba480b (origin/main, origin/HEAD, main, ft/contact-page)
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 17:52:27 2024 +0200
+
+    Diff main ft/service-redesign
+
+commit cac470eaa98deef3fd3f866552112ed4f333d80e
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 17:47:10 2024 +0200
+
+    My ReadMe
+
+commit 93335a2a2c43029710ce7840bb348170d18722e6
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 17:42:53 2024 +0200
+
+    Services file
+
+commit ada7644f5c428f28d7156f1103be2e0e43d0434e
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 17:27:24 2024 +0200
+
+    My services page in main branch
+
+commit f27daaf03a9ac6e82bf19cd05ca09787c4185b35
+Merge: b5e0e67 eeb1cc5
+Author: Beyla Ruzindana Irakoze <142901020+beylar@users.noreply.github.com> 
+Date:   Mon Apr 22 17:23:56 2024 +0200
+
+    Merge pull request #2 from beylar/ft/service-redesign
+
+    Ft/service redesign
+
+commit eeb1cc55c12b3ebd22f5d08c6ab977bc4e3348e2 (origin/ft/service-redesign, ft/service-redesign)
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 17:22:36 2024 +0200
+
+    M y README
+
+commit e7db401601217321f9ab4497a6de378e3bac19c6
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 17:16:17 2024 +0200
+
+    My services file changes
+
+commit b5e0e67d9ab438a22ec60f788aa9dbd8052e93c0
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 17:08:52 2024 +0200
+
+    new changes
+
+commit f8b88075a31fdab40bcb8c1c3a5ab3dbd939cc34
+Merge: 14d6e13 99370cf
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 17:02:41 2024 +0200
+
+    Merge branch 'main' of https://github.com/beylar/Gym-Git-Practices      
+
+commit 99370cfccd303e9855601f7861dbcb9a1dee4061
+Merge: da4680e 902495a
+Author: Mugisha Edine Noella <edinenoella@gmail.com>
+Date:   Mon Apr 22 16:47:57 2024 +0200
+
+    Merge pull request #1 from beylar/ft/bundle-2
+
+    My services page added
+
+commit 902495a5d28707859cfc2f7cee25c3e6673c34b3 (origin/ft/bundle-2)        
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 16:38:47 2024 +0200
+
+    My services page added
+
+commit 14d6e1332fb9e3e3f03b3f527433b934c485ada0
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 16:36:06 2024 +0200
+
+    Services page added
+
+commit da4680e4a61a6ac89c48cd46918e96002cf081f2
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 16:28:12 2024 +0200
+
+    My ReadMeFile
+
+commit 51e294b8859afb6b999fcf334338247121b4cadc
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 16:22:29 2024 +0200
+
+    Stashed files
+
+commit ca2ee16f5ae471cdc28cb52a30d2051429620240 (origin/dev, dev)
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 16:14:23 2024 +0200
+
+    Renaming files
+
+commit c263dc452d3c05230f3c7963d1c43907e6a7fe76
+Author: Beyla Irakoze <beylaruz@gmail.com>
+Date:   Mon Apr 22 16:13:30 2024 +0200
+
+    Adding files
+
+commit 1c3d0758d53794cefb509b3c290c039dcec27be7
+
+    Renaming files
+
+
+    Renaming files
+
+commit c263dc452d3c05230f3c7963d1c43907e6a7fe76
+Author: Beyla Irakoze <beylaruz@gmail.com>     
+Date:   Mon Apr 22 16:13:30 2024 +0200
+
+    Adding files
+
+commit 1c3d0758d53794cefb509b3c290c039dcec27be7
+Author: Beyla Ruzindana Irakoze <142901020+beylar@users.noreply.github.com>
+Date:   Mon Apr 22 16:10:58 2024 +0200
+
+    Initial commit
+~
+~
+~
+~
+~
+
+    Renaming files
+
+commit c263dc452d3c05230f3c7963d1c43907e6a7fe76
+Author: Beyla Irakoze <beylaruz@gmail.com>     
+Date:   Mon Apr 22 16:13:30 2024 +0200
+
+    Adding files
+
+commit 1c3d0758d53794cefb509b3c290c039dcec27be7
+Author: Beyla Ruzindana Irakoze <142901020+beylar@users.noreply.github.com> 
+Date:   Mon Apr 22 16:10:58 2024 +0200
+
+    Initial commit
+(END)
 
 thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (ft/contact-page)
 $ git cherry-pick
