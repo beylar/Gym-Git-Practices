@@ -959,3 +959,36 @@ To https://github.com/beylar/git-cafe-exercise.git
 
 ## Bundle 6
 ### Exercise 1
+
+```bash
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (main)
+$ git branch feature-branch
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (feature-branch) 
+$ touch menu.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (feature-branch) 
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (feature-branch) 
+$ git commit -m "My menu page"
+[feature-branch 714a66d] My menu page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 menu.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/git-cafe-exercise (feature-branch) 
+$ git push --set-upstream origin feature-branch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 443 bytes | 221.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+To https://github.com/beylar/git-cafe-exercise.git
+   8a882df..714a66d  feature-branch -> feature-branch
+branch 'feature-branch' set up to track 'origin/feature-branch'.
+```
+
+### Exercise 2
+
