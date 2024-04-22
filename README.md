@@ -802,3 +802,47 @@ branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 
 ## Bundle 4
 ### Exercise 1
+``` bash
+   thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+PS C:\Users\thegym\Desktop\Practice-Git> git clone https://github.com/beylar/Gym-new-repo.git
+Cloning into 'Gym-new-repo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop
+$ cd Practice-Git/
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git
+$ cd Gym-new-repo/
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (main)   
+$ touch home.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (main)   
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (main)   
+$ git commit -m "My home page in git copy repo"
+[main d9889b1] My home page in git copy repo
+ 1 file changed, 11 insertions(+)
+ create mode 100644 home.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Practice-Git/Gym-new-repo (main)   
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 445 bytes | 111.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/beylar/Gym-new-repo.git
+   2794505..d9889b1  main -> main
+```
+
+### Exercise 2
