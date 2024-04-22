@@ -205,3 +205,61 @@ To https://github.com/beylar/Gym-Git-Practices.git
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 
 ```
+
+### Exercise 2
+```bash
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git pull
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.74 KiB | 296.00 KiB/s, done.
+From https://github.com/edine-noella/Git-practice-project1
+   3276ce4..2e4beb0  main       -> origin/main
+Updating 3276ce4..2e4beb0
+Fast-forward
+ about.html    | 11 +++++++++++
+ home.html     | 11 +++++++++++
+ services.html | 12 ++++++++++++
+ 3 files changed, 34 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+
+ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git branch ft/service-redesign
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git checkout ft/service-redesign 
+M       README.md
+D       practice/team.html
+Switched to branch 'ft/service-redesign'
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/service-redesign)
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/service-redesign)
+$ git commit -m "My services file changes"
+[ft/service-redesign e7db401] My services file changes
+ 2 files changed, 40 insertions(+)
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/service-redesign)
+$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 904 bytes | 301.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.       
+To https://github.com/beylar/Gym-Git-Practices.git
+   b5e0e67..e7db401  ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+ 
+```
