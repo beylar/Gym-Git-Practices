@@ -168,6 +168,40 @@ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices/practice (main)
 $ git reset --hard
 HEAD is now at 51e294b Stashed files
 ```
-
 ## Bundle 2
+
 ### Exercise 1
+```bash
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git branch ft/bundle-2
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (main)
+$ git checkout ft/bundle-2 
+Switched to branch 'ft/bundle-2'
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/bundle-2)    
+$ touch services.html
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/bundle-2)    
+$ git add .
+
+thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/bundle-2)    
+$ git commit -m "My services page added"
+[ft/bundle-2 902495a] My services page added
+ 1 file changed, 11 insertions(+)
+ create mode 100644 practice/services.html
+
+ thegym@DESKTOP-3L2FSN6 MINGW64 ~/Desktop/Gym-Git-Practices (ft/bundle-2)    
+$ git push origin -u ft/bundle-2 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 527 bytes | 175.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+To https://github.com/beylar/Gym-Git-Practices.git
+   da4680e..902495a  ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+```
